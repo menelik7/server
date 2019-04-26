@@ -16,10 +16,13 @@ class Header extends React.Component {
 				);
 			default:
 				return [
-					<li key="1">
+					<li key="1" style={{ marginTop: "-2px" }}>
 						<Payments />
 					</li>,
-					<li key="2">
+					<li key="2" style={{ margin: "0 10px" }}>
+						Credits: {this.props.auth.credits}
+					</li>,
+					<li key="3">
 						<a href="/api/logout">Logout</a>
 					</li>
 				];
@@ -33,6 +36,7 @@ class Header extends React.Component {
 					<Link
 						to={this.props.auth ? "/surveys" : "/"}
 						className="left brand-logo"
+						style={{ padding: "0 15px" }}
 					>
 						Emaily
 					</Link>
