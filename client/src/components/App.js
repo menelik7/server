@@ -5,6 +5,7 @@ import * as actions from "../actions";
 import Header from "./Header";
 import Landing from "./Landing";
 import Dashboard from "./Dashboard";
+import SurveyNew from "./surveys/SurveyNew";
 import history from "../history";
 
 class App extends React.Component {
@@ -26,6 +27,13 @@ class App extends React.Component {
 									exact
 									component={
 										this.props.auth ? Dashboard : Landing
+									}
+								/>
+								<Route
+									path="/surveys/new"
+									exact
+									component={
+										this.props.auth ? SurveyNew : Landing
 									}
 								/>
 							</Switch>
