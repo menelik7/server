@@ -10,4 +10,4 @@ class SurveyForm extends React.Component {
 	}
 }
 
-export default SurveyNew;
+export default SurveyForm;
