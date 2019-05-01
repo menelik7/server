@@ -65,3 +65,5 @@ export default reduxForm({
 	form: "surveyForm",
 	destroyOnUnmount: false
 })(SurveyForm);
+
+// Had to recreate this file due to lower case s in github
