@@ -23,9 +23,11 @@ class SurveyList extends React.Component {
 						</p>
 						<p className="right">
 							Last Responded:{" "}
-							{new Date(
-								survey.lastResponded
-							).toLocaleDateString()}
+							{survey.lastResponded
+								? new Date(
+										survey.lastResponded
+								  ).toLocaleDateString()
+								: "Nothing yet!"}
 						</p>
 					</div>
 					<div className="card-action">
